@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+
+    /* primary */
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan-soft: hsl(179, 50%, 52%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    /* neutral */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --White: #ffffff;
+    --Transparent-gray: rgba(128, 128, 128, 0.618);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Karla', 'Helvetica', sans-serif;
+    background-color: var(--Light-Gray);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-card {
+    background-color: var(--White);
+    max-width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.section-card {
+    padding: 1.4rem;
+}
+
+.section-card__header-cyan {
+    color: var(--Cyan);
+}
+
+.section-card__header-white {
+    color: var(--White);
+}
+
+.section-card__paragraph-grey {
+    color: var(--Grayish-Blue);
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.section-card__text--green {
+    color: var(--Bright-Yellow);
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.section-card--cyan-soft {
+    background-color: var(--Cyan-soft);
+    width: 50%;
+
+}
+
+.section-card--dark-cyan {
+    background-color: var(--Cyan);
+    width: 50%;
+}
+
+.section-card__price {
+    color: var(--White);
+    margin-right: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.section-card__per-month {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.8rem 0;
+    color: var(--Light-Gray);
+
+}
+
+.section-card__text--white {
+    color: var(--White);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.section-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.section-button__sign-up {
+    background-color: var(--Bright-Yellow);
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0px 5px 10px 4px var(--Transparent-gray);
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-card__paragraph-white {
+    color: var(--Light-Gray);
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+
+}
+
+.attribution {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.attribution__text {
+    color: var(--Cyan-soft);
+}
+
+.attribution__link {
+    text-decoration: none;
+    color: var(--Grayish-Blue);
+}
+
+@media (max-width:425.98px) {
+
+    body {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    #main-card {
+        min-width: 375px;
+        background-color: var(--White);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 20px;
+        box-shadow: 5px 0px 10px 0px var(--Transparent-gray);
+    }
+
+    .section-card {
+        width: 100%;
+        height: 15rem;
+        padding: 1.2rem;
+
+    }
+
+    .section-card--cyan-soft {
+        background-color: var(--Cyan-soft);
+    }
+
+    .section-card--dark-cyan {
+        background-color: var(--Cyan);
+    }
+
+    .section-card__header-cyan {
+        color: var(--Cyan);
+    }
+
+    .section-card__header-white {
+        color: var(--White);
+    }
+
+    .section-card__paragraph-grey {
+        color: var(--Grayish-Blue);
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    .section-card__paragraph-white {
+        color: var(--Light-Gray);
+        padding-right: 5rem;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+
+    }
+
+    .section-card__text--green {
+        color: var(--Bright-Yellow);
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+
+    .section-card__text--white {
+        color: var(--White);
+    }
+
+    .section-card__price {
+        color: var(--White);
+        margin-right: 0.8rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .section-card__per-month {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.8rem 0;
+        color: var(--Light-Gray);
+
+    }
+
+    .section-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 6rem;
+        margin-top: 1rem;
+    }
+
+    .section-button__sign-up {
+        background-color: var(--Bright-Yellow);
+        color: var(--White);
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 0.4rem;
+        box-shadow: 0px 5px 10px 4px var(--Transparent-gray);
+        width: 100%;
+        height: 3rem;
+    }
+
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .attribution__text {
+        color: var(--Cyan-soft);
+    }
+
+    .attribution__link {
+        text-decoration: none;
+        color: var(--Grayish-Blue);
+    }
+
+
+}
